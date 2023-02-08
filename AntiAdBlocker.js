@@ -38,6 +38,9 @@
     a.addEventListener("mousewheel", function(event) {
       event.preventDefault();
     }, { passive: false });
+    a.addEventListener("contextmenu", function(event) {
+      event.preventDefault();
+    });
   }
 
   var b = document.createElement("script");

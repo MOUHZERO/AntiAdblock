@@ -9,12 +9,19 @@
       <div class="isi"> \
         <p>Please consider supporting us by disabling your ad blocker</p> \
         <div class="tombol"></div> \
-        <div class="fixblock"> </div> \
+        <div class="fixblock"> \
+          <button class="cancel">Cancel</button> \
+        </div> \
       </div>';
     document.body.append(a);
     document.body.style.overflow = "hidden";
+    document.body.style.pointerEvents = "none";
     var b = a.querySelectorAll("button");
-    a.querySelector(".close");
+    a.querySelector(".cancel").addEventListener("click", function() {
+      document.body.removeChild(a);
+      document.body.style.overflow = "auto";
+      document.body.style.pointerEvents = "auto";
+    });
     var d = a.querySelectorAll(".fixblock > div");
     for (a = 0; a < b.length; a++) {
       b[a].addEventListener("click", function(a) {
@@ -28,6 +35,9 @@
         d[c - 1].classList.add("active");
       });
     }
+    a.addEventListener("mousewheel", function(event) {
+      event.preventDefault();
+    }, { passive: false });
   }
 
   var b = document.createElement("script");

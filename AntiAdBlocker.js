@@ -7,7 +7,7 @@
         <h2>Ad Blocker Detected</h2> \
       </div> \
       <div class="isi"> \
-        <p>Please consider supporting us by disabling your ad blocker</p> \
+        <p>"Hello! Just wanted to let you know that we don\'t use any popup ads on our site, would you mind turning off your ad blocker to show your support? Thanks!"</p> \
         <div class="tombol"></div> \
         <div class="fixblock"> \
           <button class="cancel" style="display: none;">Cancel</button> \

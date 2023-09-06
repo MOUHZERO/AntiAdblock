@@ -7,20 +7,18 @@
         <h2>لديك مانع إعلانات</h2> \
       </div> \
       <div class="isi"> \
-        <p style="font-size: 18px;">مرحبًا! أردت فقط أن أخبرك بأننا لا نستخدم أي إعلانات مزعجة على موقعنا، هل تمانع في إيقاف تشغيل أداة حظر الإعلانات للمساهمة في دعم موقعنا؟<br> شكرًا جزيلاً!</p> \
+        <p style="font-size: 16px;">مرحبًا! أردت فقط أن أخبرك بأننا لا نستخدم أي إعلانات مزعجة على موقعنا، هل تمانع في إيقاف تشغيل أداة حظر الإعلانات للمساهمة في دعم موقعنا؟<br> شكرًا جزيلاً!</p> \
         <div class="tombol"></div> \
         <div class="fixblock"> \
-          <button class="cancel" style="display: visible;">Cancel</button> \
+          <button class="refresh" style="display: none; font-size: 16px;">Refresh Page</button> \
         </div> \
       </div>';
     document.body.append(a);
     document.body.style.overflow = "hidden";
     document.body.style.pointerEvents = "none";
     var b = a.querySelectorAll("button");
-    a.querySelector(".cancel").addEventListener("click", function() {
-      document.body.removeChild(a);
-      document.body.style.overflow = "auto";
-      document.body.style.pointerEvents = "auto";
+    a.querySelector(".refresh").addEventListener("click", function() {
+      window.location.reload();
     });
     var d = a.querySelectorAll(".fixblock > div");
     for (a = 0; a < b.length; a++) {

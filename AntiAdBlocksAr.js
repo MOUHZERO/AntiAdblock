@@ -10,7 +10,7 @@
         <p style="font-size: 16px;">مرحبًا! أردت فقط أن أخبرك بأننا لا نستخدم أي إعلانات مزعجة على موقعنا، هل تمانع في إيقاف تشغيل أداة حظر الإعلانات للمساهمة في دعم موقعنا؟<br> شكرًا جزيلاً!</p> \
         <div class="tombol"></div> \
         <div class="fixblock"> \
-          <button class="cancel" style="display: none;">Cancel</button> \
+          <button class="cancel" style="display: visible;">Cancel</button> \
         </div> \
       </div>';
     document.body.append(a);

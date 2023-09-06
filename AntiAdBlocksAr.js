@@ -4,21 +4,23 @@
     a.id = "arlinablock";
     a.innerHTML = '<div class="inner"> \
       <div class="header"> \
-        <h2 style="font-size: 18px; font-weight: bold;">لديك مانع إعلانات</h2> \
+        <h2>لديك مانع إعلانات</h2> \
       </div> \
       <div class="isi"> \
-        <p style="font-size: 16px;">مرحبًا! أردت فقط أن أخبرك بأننا لا نستخدم أي إعلانات مزعجة على موقعنا، هل تمانع في إيقاف تشغيل أداة حظر الإعلانات للمساهمة في دعم موقعنا؟<br> شكرًا جزيلاً!</p> \
+        <p style="font-size: 18px;">مرحبًا! أردت فقط أن أخبرك بأننا لا نستخدم أي إعلانات مزعجة على موقعنا، هل تمانع في إيقاف تشغيل أداة حظر الإعلانات للمساهمة في دعم موقعنا؟<br> شكرًا جزيلاً!</p> \
         <div class="tombol"></div> \
         <div class="fixblock"> \
-          <button class="refresh" style="display: block; font-size: 16px;">Refresh Page</button> \
+          <button class="cancel" style="display: none;">Cancel</button> \
         </div> \
       </div>';
     document.body.append(a);
     document.body.style.overflow = "hidden";
     document.body.style.pointerEvents = "none";
     var b = a.querySelectorAll("button");
-    a.querySelector(".refresh").addEventListener("click", function() {
-      window.location.reload();
+    a.querySelector(".cancel").addEventListener("click", function() {
+      document.body.removeChild(a);
+      document.body.style.overflow = "auto";
+      document.body.style.pointerEvents = "auto";
     });
     var d = a.querySelectorAll(".fixblock > div");
     for (a = 0; a < b.length; a++) {

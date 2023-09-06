@@ -4,10 +4,10 @@
     a.id = "arlinablock";
     a.innerHTML = '<div class="inner"> \
       <div class="header"> \
-        <h2>Ad Blocker Detected</h2> \
+        <h2>لديك مانع إعلانات</h2> \
       </div> \
       <div class="isi"> \
-        <p>مرحبًا! أردت فقط أن أخبرك بأننا لا نستخدم أي إعلانات مزعجة على موقعنا، هل تمانع في إيقاف تشغيل أداة حظر الإعلانات للمساهمة في دعم موقعنا؟<br> شكرًا جزيلاً!</p> \
+        <h4>مرحبًا! أردت فقط أن أخبرك بأننا لا نستخدم أي إعلانات مزعجة على موقعنا، هل تمانع في إيقاف تشغيل أداة حظر الإعلانات للمساهمة في دعم موقعنا؟<br> شكرًا جزيلاً!</h4> \
         <div class="tombol"></div> \
         <div class="fixblock"> \
           <button class="cancel" style="display: none;">Cancel</button> \
